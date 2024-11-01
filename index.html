@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="img"></div>
+
+    <div class="container">
+        <h1>Titanic Survival Prediction</h1>
+        <form id="survival-form" class="form">
+            <div class="form-group">
+                <label for="Pclass">Passenger Class:</label>
+                <select id="Pclass" class="location">
+                    <option value="1">1st Class</option>
+                    <option value="2">2nd Class</option>
+                    <option value="3">3rd Class</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="text" id="Age" class="location" placeholder="Enter Age">
+            </div>
+
+            <div class="form-group">
+                <label>Sex:</label>
+                <div class="switch-field">
+                    <input type="radio" id="male" name="Sex" value="male" checked />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Sex" value="female" />
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="SibSp">Siblings/Spouses Aboard:</label>
+                <input type="text" id="SibSp" class="location" placeholder="Enter number">
+            </div>
+
+            <div class="form-group">
+                <label for="Fare">Fare:</label>
+                <input type="text" id="Fare" class="location" placeholder="Enter Fare">
+            </div>
+
+            <button type="submit" class="submit">Predict</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
